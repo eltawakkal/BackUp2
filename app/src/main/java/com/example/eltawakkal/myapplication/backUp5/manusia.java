@@ -8,6 +8,11 @@ public class manusia {
     private String nama;
     private int umur;
 
+    public manusia(String nama, int umur) {
+        this.nama = nama;
+        this.umur = umur;
+    }
+
     public String getNama() {
         return nama;
     }

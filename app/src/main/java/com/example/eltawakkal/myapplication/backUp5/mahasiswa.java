@@ -3,12 +3,9 @@ package com.example.eltawakkal.myapplication.backUp5;
 /**
  * Created by Eltawakkal on 6/16/16.
  */
-public class main {
+public interface mahasiswa {
 
-    public static void main(String[] args) {
-
-
-
-    }
+    public void rkhs();
+    public void daftar();
 
 }
