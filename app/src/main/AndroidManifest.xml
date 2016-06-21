@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Calculator"></activity>
+        <activity android:name=".backup6.ListView_Class"></activity>
     </application>
 
 </manifest>
