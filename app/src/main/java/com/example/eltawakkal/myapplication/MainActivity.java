@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.eltawakkal.myapplication.backUp7.Api_With_Custom_ListView;
 import com.example.eltawakkal.myapplication.backup6.ListView_Class;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mText;
     private String alamat;
     private ImageView imageView;
+    ImageView btAPI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         mButton = (Button)findViewById(R.id.btChange);
         mText = (TextView)findViewById(R.id.txAlamat);
         imageView = (ImageView)findViewById(R.id.imgLogo);
-
 
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListView_Class.class);
                 startActivity(intent);
+            }
+        });
+
+        imageView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                startActivity(new Intent(MainActivity.this, Api_With_Custom_ListView.class));
+                return true;
             }
         });
 

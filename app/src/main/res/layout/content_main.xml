@@ -54,9 +54,15 @@
             android:layout_height="wrap_content"
             android:textColor="#fff"
             android:text="CEO Of Hayaqo Company"
-            android:paddingBottom="100dp"
+            android:paddingBottom="15dp"
             android:id="@+id/textView4"
             android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:id="@+id/btAPI"
+            android:src="@android:drawable/ic_dialog_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
